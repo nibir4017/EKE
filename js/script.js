@@ -1,0 +1,11 @@
+
+const mobile_icons_container = document.querySelector(".mobile-icons-container");
+const nav_header = document.querySelector(".active");
+const nav_ul = document.querySelector(".nav_ul")
+const toggleNavbar = () => {
+   
+   nav_header.classList.toggle("active");
+   nav_ul.classList.toggle(".display-toggle")
+};
+
+mobile_icons_container.addEventListener("click", () => toggleNavbar());
