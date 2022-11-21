@@ -181,3 +181,9 @@ nav ul li:hover{
       
       
 }
+@media(max-width: 345px) {
+   .active .nav_ul li{
+    font-size: 20px;
+    text-align: center;
+   }
+}
