@@ -147,10 +147,15 @@ nav ul li:hover{
         z-index: 90;
     } 
     .active .mobile-icons-container{
-      position: absolute;
-      top: 25px;
-      right: 43px;
+     height: 100vh;
+     position: relative;
+     top: 40px;
+
     }
+    .active .mobile-icons-container .close-icon{
+      transform: scale(1.05)
+    }
+
     .all-icons-container div a img{
         display: none;
       }
