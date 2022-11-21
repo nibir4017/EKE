@@ -18,7 +18,7 @@ header{
   flex-direction: row;
   padding: 21px 50px;
   box-sizing: border-box;
-
+  transition:all 0.5s linear;
 }
 .header_items_container{
    display: flex;
@@ -29,6 +29,9 @@ header{
 }
 .logo img{
     width: 40px;
+}
+nav{
+ 
 }
 nav ul{
     text-decoration: none;
@@ -84,7 +87,9 @@ nav ul li:hover{
 /* responsive codes */
 
 @media(max-width:784px) {
-    
+    .logo{
+      display: block;
+    }
     nav ul li{
         margin: 10px;
         font-size: 12px;
@@ -106,20 +111,25 @@ nav ul li:hover{
         position: absolute;
         top: 0;
         left: 0;
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        z-index: 20;
+       opacity: 1;
     
         /* to get the tranisition  */
        
-    /* transition: all 0.5s linear;
+     /* transition: all 0.5s linear;
 
     opacity: 0;
     visibility: hidden;
-    pointer-events: none; */
+    pointer-events: none;  */
     }
-    nav ul{
+    .active .header_items_container .logo{
+      opacity: 0;
+    }
+    
+     nav ul{
+      display: none;
+    }
+    .active .nav_ul{
       display: flex;
       
       flex-direction: column;
@@ -136,6 +146,11 @@ nav ul li:hover{
         height: 2rem;
         z-index: 90;
     } 
+    .active .mobile-icons-container{
+      position: absolute;
+      top: 25px;
+      right: 43px;
+    }
     .all-icons-container div a img{
         display: none;
       }
@@ -143,8 +158,21 @@ nav ul li:hover{
         display: flex;
         gap: 5px;
       }
-      .display_toggle{
+      .active .header_items_container nav {
+       
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+    
+      .active .all-icons-container .close-icon {
+        display: block;
+       
+      }
+    
+      .active .all-icons-container  .menu-icon {
         display: none;
-      } 
+      }
+      
       
 }
