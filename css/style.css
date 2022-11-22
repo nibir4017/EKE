@@ -171,7 +171,9 @@ nav ul li:hover{
 }
 
 @media(max-width: 550px) {
-    body{overflow-x: hidden}
+  .news-container{
+    overflow-x: hidden;
+  }
      .active{
         /* display: none */
         width: 100%;
