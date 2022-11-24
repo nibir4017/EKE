@@ -122,11 +122,10 @@ nav ul li:hover{
 
 .news-container ul li {
   white-space: nowrap;
-  padding: 10px 24px;
+  padding: 10px 40px;
   color: black;
   position: relative; 
-    margin-left: 15px;
-    margin-right: 15px;
+    
 }
 
 .news-container ul li::after {
