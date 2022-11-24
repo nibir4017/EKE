@@ -135,6 +135,8 @@ nav ul li:hover{
   position: absolute;
   top: 0;
   right: 0;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .news-container ul li:last-child::after {
