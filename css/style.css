@@ -122,10 +122,10 @@ nav ul li:hover{
 
 .news-container ul li {
   white-space: nowrap;
-  padding: 10px 40px;
+  padding: 10px 24px;
   color: black;
   position: relative; 
-    
+  
 }
 
 .news-container ul li::after {
@@ -136,7 +136,7 @@ nav ul li:hover{
   position: absolute;
   top: 0;
   right: 0;
-    
+  
 }
 
 .news-container ul li:last-child::after {
@@ -176,6 +176,13 @@ nav ul li:hover{
   .news-container{
     overflow-x: hidden;
     z-index: 0;
+  }
+  .news-container ul li {
+    white-space: nowrap;
+    padding: 10px 10px;
+    color: black;
+    position: relative; 
+    
   }
   .news-container ul li::after {
     content:"";
