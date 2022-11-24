@@ -182,7 +182,7 @@ nav ul li:hover{
     padding: 10px 24px;
     color: black;
     position: relative; 
-    border: 1px solid black;
+    border-right: 1px solid black;
       display: block;
   }
   .news-container ul li::after {
