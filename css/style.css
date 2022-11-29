@@ -155,7 +155,7 @@ to {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  height: auto;
 }
 #all_landing_container {
  display: flex;
