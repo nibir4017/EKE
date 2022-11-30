@@ -264,7 +264,12 @@ to {
 }
 
 
-
+.orange_button{
+  background-color:#E6A800
+ } 
+ .orange_text{
+  color: #E6A800
+ }
 
 
 
@@ -297,7 +302,7 @@ to {
     }
     #landing_section > div{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
     }
     #button_container{
       display: flex;
@@ -415,11 +420,14 @@ to {
  }
  #landing_left_container h1{
   text-align: left;
+  
+  width: 25.5vw;
+  font-size: ;
  }
  #polygon{
   display: none;
  }
-    
+  
     
 }
 @media(max-width: 345px) {
